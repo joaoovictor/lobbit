@@ -20,27 +20,29 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 
 #### `POST` /lobbit/api/usuarios
 
-| campo    | tipo  | obrigatório | descrição                        |
-| -------- | ----- | ----------- | -------------------------------- |
-| email    | texto | true        | é o email de cadastro do usuário |
-| nome     | texto | true        | é o nome completo do usuário     |
-| senha    | texto | true        | é a senha de acesso do usuário   |
-| nickname | texto | true        | é o apelido do usuário           |
-| data     | date  | true        | é data de cadastro do usuário    |
+| campo               | tipo  | obrigatório | descrição                           |
+| ------------------- | ----- | ----------- | ----------------------------------- |
+| email               | texto | true        | é o email de cadastro do usuário    |
+| nome                | texto | true        | é o nome completo do usuário        |
+| senha               | texto | true        | é a senha de acesso do usuário      |
+| nickname            | texto | true        | é o apelido do usuário              |
+| data                | date  | true        | é data de cadastro do usuário       |
+| plataformaPreferida | texto | false       | é a plataforma preferida do usuário |
+| jogoPreferido       | texto | false       | é o jogo preferido do usuário       |
+| descricaoPlayer     | texto | false       | É a descrição do usuário            |
 
 #### Exemplo corpo da requisição
 
 ```javascript
 {
     "email" : "bann@hotmail.com",
-     "nome" : "Davi Oliveira da Silva",
+    "nome" : "Davi Oliveira da Silva",
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "meliodasKiller",
     "data" : "10/12/2022",
-    "playerAcc": {
-        "plataformaPreferida": "",
-        "jogoPreferido" : "",
-        "descricaoPlayer" : "",
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",
     }
 }
 ```
@@ -68,11 +70,9 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "meliodasKiller",
     "data" : "02/05/2022",
-    "playerAcc": {
-        "plataformaPreferida": "",
- 	 "jogoPreferido" : "",
-        "descricaoPlayer" : "",
-    }    
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",    
 },
 }
     "email" : "bannaa@hotmail.com",
@@ -80,11 +80,9 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "Shelby",
     "data" : "18/04/2022",
-    "playerAcc": {
-        "plataformaPreferida": "",
-        "jogoPreferido" : "",
-        "descricaoPlayer" : "",
-    }    
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",    
 }
 	]
 ```
@@ -105,16 +103,14 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 #### Exemplo de resposta da requisição
 
 ``` javascript
-}
-     "email" : "bann@hotmail.com",
-     "nome" : "Davi Oliveira da Silva",
+{
+    "email" : "bann@hotmail.com",
+    "nome" : "Davi Oliveira da Silva",
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "meliodasKiller",
-    "playerAcc": {
-        "plataformaPreferida": "",
-        "jogoPreferido" : "",
-        "descricaoPlayer" : "",
-    }    
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",
 }
 ```
 
@@ -152,12 +148,10 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
      "nome" : "Davi Silva",
      "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
      "nickname" : "CHUPExxx",
-     "playerAcc": {
-        "plataformaPreferida": "PS4",
-        "jogoPreferido" : "The last of Us",
-        "descricaoPlayer" : "Um player sagaz com vontade de ser o melhor.",
+     "plataformaPreferida": "PS4",
+     "jogoPreferido" : "The last of Us",
+      "descricaoPlayer" : "Um player sagaz com vontade de ser o melhor.",
     }    
-}
 ```
 
 #### Códigos de resposta
@@ -278,4 +272,3 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 | ------ | ----------------------------------------- |
 | 200    | Ok                                        |
 | 400    | erro na validação dos dados da requisição |
-
