@@ -20,27 +20,29 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 
 #### `POST` /lobbit/api/usuarios
 
-| campo    | tipo  | obrigatório | descrição                        |
-| -------- | ----- | ----------- | -------------------------------- |
-| email    | texto | true        | é o email de cadastro do usuário |
-| nome     | texto | true        | é o nome completo do usuário     |
-| senha    | texto | true        | é a senha de acesso do usuário   |
-| nickname | texto | true        | é o apelido do usuário           |
-| data     | date  | true        | é data de cadastro do usuário    |
+| campo               | tipo  | obrigatório | descrição                           |
+| ------------------- | ----- | ----------- | ----------------------------------- |
+| email               | texto | true        | é o email de cadastro do usuário    |
+| nome                | texto | true        | é o nome completo do usuário        |
+| senha               | texto | true        | é a senha de acesso do usuário      |
+| nickname            | texto | true        | é o apelido do usuário              |
+| data                | date  | true        | é data de cadastro do usuário       |
+| plataformaPreferida | texto | false       | é a plataforma preferida do usuário |
+| jogoPreferido       | texto | false       | é o jogo preferido do usuário       |
+| descricaoPlayer     | texto | false       | É a descrição do usuário            |
 
 #### Exemplo corpo da requisição
 
 ```javascript
 {
-	"email" : "bann@hotmail.com",
-	"nome" : "Davi Oliveira da Silva",
+    "email" : "bann@hotmail.com",
+    "nome" : "Davi Oliveira da Silva",
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "meliodasKiller",
     "data" : "10/12/2022",
-    "playerAcc": {
-        "plataformaPreferida": "",
-        "jogoPreferido" : "",
-        "descricaoPlayer" : "",
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",
     }
 }
 ```
@@ -63,28 +65,24 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 ``` javascript
  [
 }
-	"email" : "bann@hotmail.com",
-	"nome" : "Davi Oliveira da Silva",
+    "email" : "bann@hotmail.com",
+    "nome" : "Davi Oliveira da Silva",
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "meliodasKiller",
-     "data" : "02/05/2022",
-    "playerAcc": {
-        "plataformaPreferida": "",
- 	       "jogoPreferido" : "",
-        "descricaoPlayer" : "",
-    }    
+    "data" : "02/05/2022",
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",    
 },
 }
-	"email" : "bannaa@hotmail.com",
-	"nome" : "Chris Oliveira da Silva",
+    "email" : "bannaa@hotmail.com",
+    "nome" : "Chris Oliveira da Silva",
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "Shelby",
     "data" : "18/04/2022",
-    "playerAcc": {
-        "plataformaPreferida": "",
-        "jogoPreferido" : "",
-        "descricaoPlayer" : "",
-    }    
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",    
 }
 	]
 ```
@@ -105,16 +103,14 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 #### Exemplo de resposta da requisição
 
 ``` javascript
-}
-	"email" : "bann@hotmail.com",
-	"nome" : "Davi Oliveira da Silva",
+{
+    "email" : "bann@hotmail.com",
+    "nome" : "Davi Oliveira da Silva",
     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
     "nickname" : "meliodasKiller",
-    "playerAcc": {
-        "plataformaPreferida": "",
-        "jogoPreferido" : "",
-        "descricaoPlayer" : "",
-    }    
+    "plataformaPreferida": "",
+    "jogoPreferido" : "",
+    "descricaoPlayer" : "",
 }
 ```
 
@@ -148,16 +144,14 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 
 ``` javascript
 }
-	"email" : "bann@hotmail.com",
-	"nome" : "Davi Silva",
-    "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
-    "nickname" : "CHUPExxx",
-    "playerAcc": {
-        "plataformaPreferida": "PS4",
-        "jogoPreferido" : "The last of Us",
-        "descricaoPlayer" : "Um player sagaz com vontade de ser o melhor.",
+     "email" : "bann@hotmail.com",
+     "nome" : "Davi Silva",
+     "senha" : "ADKJSALKDKLSAJD8SADU83MDKSLAFJ",
+     "nickname" : "CHUPExxx",
+     "plataformaPreferida": "PS4",
+     "jogoPreferido" : "The last of Us",
+      "descricaoPlayer" : "Um player sagaz com vontade de ser o melhor.",
     }    
-}
 ```
 
 #### Códigos de resposta
@@ -185,7 +179,7 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 
 ```javascript
 {
-	"avalicao" : "rapaz o jogo e bom só que ate agora ainda sou noob nele mais um dia me torno um veterano nele só vai 	demorar mais algumas horas kkkkkk mas tirando isso o jogo e top demais trilha sonora efeitos e mecanicas tudo e muito bem feito alem e claro de ser super leve.", 
+    "avalicao" : "rapaz o jogo e bom só que ate agora ainda sou noob nele mais um dia me torno um veterano nele só vai 	demorar mais algumas horas kkkkkk mas tirando isso o jogo e top demais trilha sonora efeitos e mecanicas tudo e muito bem feito alem e claro de ser super leve.", 
     "qtd_star" : "5"
     "data" : "24/08/2002"
 }
@@ -215,7 +209,7 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 {    
         "avalicao" : "Um dos únicos mmo's que respeitam o seu tempo e dinheiro..", 
         "qtd_star" : "5"
-   		"data" : "14/03/2001"
+   	"data" : "14/03/2001"
 }
 	]
 
@@ -235,11 +229,11 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 `GET` /lobbit/api/avaliacao/{id}
 
 ```javascript
-	{
+    {
         "avalicao" : "jogo top joguei por muito tempo, divertido", 
         "qtd_star" : "4"
         "data" : "24/08/2002"
-	}
+    }
 ```
 
 #### Códigos de resposta
@@ -278,4 +272,3 @@ A lobbit é uma plataforma independente que permite você pesquisar antes de com
 | ------ | ----------------------------------------- |
 | 200    | Ok                                        |
 | 400    | erro na validação dos dados da requisição |
-
